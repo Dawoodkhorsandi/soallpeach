@@ -4,7 +4,7 @@ from math import sqrt
 file_name = sys.argv[1]
 
 
-def is_prime(n):
+def is_prime(int: n) -> int:
     if n <= 3:
         return 1
 
