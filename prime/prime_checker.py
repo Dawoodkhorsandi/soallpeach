@@ -6,9 +6,6 @@ file_name = sys.argv[1]
 
 def is_prime(n: int) -> bool:
 
-    if n <= 3:
-        return True
-
     if n % 2 == 0:
         return False
 
@@ -19,8 +16,10 @@ def is_prime(n: int) -> bool:
         print(m, m+2);
         if n % m == 0 or n % (m + 2) ==0:
             return False
-
     
+    if n <= 3:
+        return True
+
     return True
 
 
