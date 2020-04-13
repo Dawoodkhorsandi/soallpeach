@@ -1,3 +1,3 @@
 # Soalpeach
 
-###### Participating in [Soalpeach](https://soallpeach.run/) challenges.
+Participating in [Soalpeach](https://soallpeach.run/) challenges.
