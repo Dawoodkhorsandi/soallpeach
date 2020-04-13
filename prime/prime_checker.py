@@ -4,27 +4,27 @@ from math import sqrt
 file_name = sys.argv[1]
 
 
-def is_prime(n: int) -> bool:
+def is_prime(n):
     if n <= 3:
-        return True
+        return 1
 
     if n % 2 == 0:
-        return False
+        return 0
 
     if n % 3 == 0:
-        return False
+        return 0
     
     for m in range(5, int(sqrt(n))+1, 6):
         if n % m == 0 or n % (m + 2) ==0:
-            return False
+            return 0
     
 
 
-    return True
+    return 1
 
 
 with open(file_name) as input_numbers:
     for line in input_numbers:
         number = int(line)
-        print(1 if is_prime(number) else 0)
+        print(is_prime(number))
     
