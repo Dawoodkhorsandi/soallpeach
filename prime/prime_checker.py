@@ -13,7 +13,6 @@ def is_prime(n: int) -> bool:
         return False
     
     for m in range(5, int(sqrt(n))+1, 6):
-        print(m, m+2);
         if n % m == 0 or n % (m + 2) ==0:
             return False
     
