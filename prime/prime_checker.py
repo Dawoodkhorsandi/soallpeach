@@ -5,11 +5,12 @@ file_name = sys.argv[1]
 
 
 def is_prime(n: int) -> bool:
+
     if n % 2 == 0:
-        return True
+        return False
 
     if n % 3 == 0:
-        return True
+        return False
     
     for m in range(5, int(sqrt(n))+1, 6):
         if n % m == 0 or n % (m + 2) ==0:
@@ -17,7 +18,7 @@ def is_prime(n: int) -> bool:
     
     if n <= 3:
         return True
-    
+
     return True
 
 
