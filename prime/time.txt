@@ -1,0 +1,13 @@
+==== cpython on my machine ======
+
+python3 original.py   10.34s user 1.98s system 99% cpu 12.340 total
+python3 original.py   10.11s user 2.25s system 99% cpu 12.360 total
+python3 original.py   10.35s user 2.12s system 99% cpu 12.475 total
+python3 string_concatenation.py   5.75s user 0.42s system 93% cpu 6.591 total
+python3 string_concatenation.py   5.77s user 0.39s system 93% cpu 6.572 total
+python3 string_concatenation.py   5.79s user 0.43s system 93% cpu 6.649 total
+
+======= pypy3 on docker container also runnig in my machine =======
+docker run -v ~/Desktop/input.txt:/app/input.txt -it --rm original:v1 input.txt  1.44s user 2.81s system 40% cpu 10.546 total
+docker run -v ~/Desktop/input.txt:/app/input.txt -it --rm string_concatenation:v1 input.txt  0.05s user 0.06s system 0% cpu 3:42.01 total
+docker run -v ~/Desktop/input.txt:/app/input.txt -it --rm list_join:v1 input.txt  0.05s user 0.03s system 1% cpu 6.643 total
